@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# App data
+sop.db
+*.db
+*.sqlite
+*.sqlite3
+data/*.db
+
+# Test runtime
+tests/test_runtime.db
+tests/tmp*/
+
+# PyInstaller
+build/
+build-debug/
+dist/
+*.pkg
+WebScanSOP_debug.spec
+
+# Local tooling
+.env
+.edge/
+.edge-profile/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

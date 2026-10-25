@@ -1,0 +1,14 @@
+services:
+  webscan-sop:
+    build: .
+    container_name: webscan-sop
+    ports:
+      - "127.0.0.1:8765:8765"
+    environment:
+      HOST: "0.0.0.0"
+      PORT: "8765"
+      DB_PATH: "/data/sop.db"
+      SEED_DEMO: "1"
+    volumes:
+      - ./data:/data
+    restart: unless-stopped

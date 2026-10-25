@@ -1,0 +1,2 @@
+# No third-party dependencies.
+# WebScan SOP uses only the Python standard library (http.server + sqlite3).
